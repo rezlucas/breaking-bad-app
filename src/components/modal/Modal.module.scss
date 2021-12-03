@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+@import "src/styles/variables.scss";
 
-// __________colors__________
-$gray-color: hsl(0, 0%, 75%);
-$primary-color: hsl(146, 32%, 17%);
-$secondary-color: hsl(149, 53%, 51%);
-$white-color: hsl(0, 0%, 100%);
-
-// __________fonts__________
 $primary-font: "Slabo 27px", serif;
 
 .modal__wrapper {
@@ -31,7 +25,7 @@ $primary-font: "Slabo 27px", serif;
   min-height: 400px;
   width: 100%;
   max-width: 670px;
-  color: $primary-color;
+  color: $secondary-color;
   background-color: $white-color;
   border-radius: 10px;
   box-sizing: border-box;
@@ -57,7 +51,7 @@ $primary-font: "Slabo 27px", serif;
       align-items: center;
       width: 100%;
       padding: 1rem;
-      background-color: $secondary-color;
+      background-color: $primary-color;
       font-family: $primary-font;
       font-weight: 800;
 
@@ -86,7 +80,7 @@ $primary-font: "Slabo 27px", serif;
         -o-transition: all ease 0.35s;
         transition: all ease 0.35s;
 
-        color: $primary-color;
+        color: $secondary-color;
         &:hover {
           cursor: pointer;
         }
@@ -114,7 +108,7 @@ $primary-font: "Slabo 27px", serif;
       gap: 0.7rem;
       margin: 1rem 0;
       padding: 1rem;
-      color: $primary-color;
+      color: $secondary-color;
       font-weight: bold;
 
       .informations__value {
@@ -126,7 +120,7 @@ $primary-font: "Slabo 27px", serif;
     .episode__appearances {
       display: flex;
       flex-direction: column;
-      border-top: 2px solid $secondary-color;
+      border-top: 2px solid $primary-color;
       padding-left: 1rem;
       font-size: 1.2rem;
 

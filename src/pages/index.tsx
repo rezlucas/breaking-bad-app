@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Index.module.scss";
-import MyApp from "./_app.jsx";
 import Card from "../components/card/card";
 
 export default function Home({ characters }) {

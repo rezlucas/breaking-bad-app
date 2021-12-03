@@ -1,8 +1,4 @@
-// __________colors__________
-$black-color: hsl(21, 41%, 8%);
-$primary-color: hsl(149, 53%, 51%);
-$secondary-color: hsl(146, 32%, 17%);
-$white-color: hsl(0, 0%, 100%);
+@import "src/styles/variables.scss";
 
 .full__card__list {
   display: flex;

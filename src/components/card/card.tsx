@@ -1,5 +1,5 @@
 import styles from "./Card.module.scss";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import BreakingBadApi from "../../services/BreakingBadApi";
 import { Character } from "../../interfaces/character.interface";
 import Modal from "../modal/modal";

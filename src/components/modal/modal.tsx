@@ -1,6 +1,5 @@
 import styles from "./Modal.module.scss";
-import { useEffect, useRef, useState } from "react";
-import BreakingBadApi from "../../services/BreakingBadApi";
+import { useEffect, useRef } from "react";
 import { Character } from "../../interfaces/character.interface";
 import Image from "next/image";
 
