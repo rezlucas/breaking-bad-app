@@ -1,0 +1,94 @@
+// __________colors__________
+$black-color: hsl(21, 41%, 8%);
+$primary-color: hsl(149, 53%, 51%);
+$secondary-color: hsl(146, 32%, 17%);
+$white-color: hsl(0, 0%, 100%);
+
+.full__card__list {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.full__card {
+  position: relative;
+  width: 20vh;
+  background-color: $primary-color;
+  color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid $black-color;
+  border-radius: 5%;
+  box-sizing: border-box;
+  box-shadow: 6px 7px 5px -3px rgba(0, 0, 0, 0.72);
+  transition: 0.5s;
+
+  .symbol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subtitle__symbol__name {
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding-left: 0%;
+    text-align: center;
+  }
+
+  .symbol__name {
+    font-size: 4rem;
+    margin: 0%;
+    color: $white-color;
+  }
+
+  .numerical__order,
+  .character__name {
+    padding-left: 10%;
+    font-weight: 600;
+  }
+}
+
+.full__card:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.full__card__overview {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  width: 20vw;
+  background-color: $black-color;
+  color: $white-color;
+  border-radius: 3%;
+}
+
+.info__overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img__character {
+  border-radius: 3% 0% 0% 3%;
+}
+
+.img__and__info {
+  font-size: 18px;
+}
+
+.info__icon {
+  width: 10px;
+  height: 10px;
+}
+
+.seasons__participated,
+.info__icon {
+  color: $primary-color;
+}

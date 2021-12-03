@@ -1,0 +1,15 @@
+.full__screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsl(146, 32%, 17%);
+
+  .header {
+    text-align: center;
+
+    .card__list__title {
+      margin-top: 0;
+    }
+  }
+}
