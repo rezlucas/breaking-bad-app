@@ -1,5 +1,5 @@
 import styles from "./Modal.module.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import BreakingBadApi from "../../services/BreakingBadApi";
 import { Character } from "../../interfaces/character.interface";
 import Image from "next/image";
@@ -10,9 +10,24 @@ interface ComponentProps {
 }
 
 const Modal: React.FC<ComponentProps> = ({ character, setCharacter }) => {
+  const modalRef = useRef(null);
+
+  useEffect(() => {
+    document.body.addEventListener("click", handleClickElement, false);
+    return () => {
+      document.body.removeEventListener("click", handleClickElement, false);
+    };
+  }, []);
+
+  const handleClickElement = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      setCharacter(null);
+    }
+  };
+
   return (
     <div className={styles["modal__wrapper"]}>
-      <div className={styles["full__card__overview"]}>
+      <div className={styles["full__card__overview"]} ref={modalRef}>
         <img className={styles["img__character"]} src={character.img} />
         <div className={styles["info__overview"]}>
           <div className={styles["header"]}>
